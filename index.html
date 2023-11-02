@@ -1,0 +1,47 @@
+<title>click mo</title>
+<link rel="stylesheet" href="style.css">
+<html>
+  <style type="text/css">
+    body {
+      margin: 0;
+      padding: 0;
+      padding-top: 400px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div>
+      <h1>Pwede kita ligawan?</h1>
+      <button id="yesButton">YES</button>
+      <button id="no">NO</button>
+    </div>
+    <style>
+      div{
+        text-align: center;
+        vertical-align: middle;
+        
+      }
+      #no{
+        position: absolute;
+      }
+      body{
+        background-image: url(download.jpg);
+      }
+      #yesButton{
+        margin-right: 10px;
+      }
+    </style>
+    <script>
+      document.getElementById("yesButton").addEventListener("click", function (){
+      alert("sige sabi mo ah<33");
+      });
+
+      var b = document.getElementById("no")
+      b.addEventListener("click", change);
+      function change() {
+        var i = Math.floor(Math.random()*1000)+1;
+        var j = Math.floor(Math.random()*700)+1;
+        b.style.left = i+"px";
+        b.style.top = j+"px";
+      }
+    </script>
